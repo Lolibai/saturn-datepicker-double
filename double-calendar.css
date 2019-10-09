@@ -1,0 +1,19 @@
+
+.row {
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.col {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+@media (min-width: 600px) {
+    .col {
+        flex: 1 1 0%;
+        box-sizing: border-box;
+    }
+}

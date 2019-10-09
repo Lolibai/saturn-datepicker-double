@@ -1,0 +1,61 @@
+<div class="row">
+
+    <div class="col">
+        <sat-calendar #calendar1
+                      cdkTrapFocus
+                      [id]="id + '_c1'"
+                      [startAt]="startAt"
+                      [startView]="startView"
+                      [minDate]="minDate"
+                      [maxDate]="maxDate"
+                      [dateFilter]="dateFilter"
+                      [headerComponent]="calendarHeaderComponent"
+                      [footerComponent]="calendarFooterComponent"
+                      [selected]="selected"
+                      [dateClass]="dateClass"
+                      [@fadeInCalendar]="'enter'"
+                      (selectedChange)="select($event)"
+                      (yearSelected)="selectYear($event)"
+                      (monthSelected)="selectMonth($event)"
+                      [beginDate]="beginDate"
+                      [endDate]="endDate"
+                      [rangeMode]="rangeMode"
+                      [closeAfterSelection]="closeAfterSelection"
+                      [orderPeriodLabel]="orderPeriodLabel"
+                      [rangeMode]="true"
+                      (dateRangesChange)="selectRange($event)"
+                      (beginDateSelectedChange)="setBeginDateSelected($event)">
+        </sat-calendar>
+        <!-- [ngClass]="panelClass" -->
+        <!-- (_userSelection)="close()" -->
+    </div>
+    <div class="col">
+        <sat-calendar #calendar2
+                      cdkTrapFocus
+                      [id]="id + '_c2'"
+                      [startAt]="startAt2"
+                      [startView]="startView"
+                      [minDate]="minDate"
+                      [maxDate]="maxDate"
+                      [dateFilter]="dateFilter"
+                      [headerComponent]="calendarHeaderComponent"
+                      [footerComponent]="calendarFooterComponent"
+                      [selected]="selected"
+                      [dateClass]="dateClass"
+                      [@fadeInCalendar]="'enter'"
+                      (selectedChange)="select($event)"
+                      (yearSelected)="selectYear($event)"
+                      (monthSelected)="selectMonth($event)"
+                      [beginDate]="beginDate"
+                      [endDate]="endDate"
+                      [rangeMode]="rangeMode"
+                      [closeAfterSelection]="closeAfterSelection"
+                      [orderPeriodLabel]="orderPeriodLabel"
+                      [rangeMode]="true"
+                      (dateRangesChange)="selectRange($event)"
+                      (beginDateSelectedChange)="setBeginDateSelected($event)">
+        </sat-calendar>
+        <!-- [ngClass]="panelClass" -->
+        <!-- (_userSelection)="close()" -->
+    </div>
+</div>
